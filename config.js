@@ -6,13 +6,13 @@ var path = require('path');
 
 var config = {
   // debug 为 true 时，用于本地调试
-  debug: true,
+  debug: false,
 
   get mini_assets() { return !this.debug; }, // 是否启用静态文件的合并压缩，详见视图中的Loader
 
-  name: 'Nodeclub', // 社区名字
-  description: 'CNode：Node.js专业中文社区', // 社区的描述
-  keywords: 'nodejs, node, express, connect, socket.io',
+  name: 'cartboard club', // 社区名字
+  description: 'cartboard专业虚拟/增强现实中文社区', // 社区的描述
+  keywords: 'AR, VR, cartboard, hololens, oculus rift',
 
   // 添加到 html head 中的信息
   site_headers: [
@@ -42,8 +42,8 @@ var config = {
   redis_port: 6379,
   redis_db: 0,
 
-  session_secret: 'node_club_secret', // 务必修改
-  auth_cookie_name: 'node_club',
+  session_secret: 'cartboard_club_secret', // 务必修改
+  auth_cookie_name: 'cartboard_club',
 
   // 程序运行的端口
   port: 3000,
@@ -53,10 +53,10 @@ var config = {
 
   // RSS配置
   rss: {
-    title: 'CNode：Node.js专业中文社区',
-    link: 'http://cnodejs.org',
+    title: 'cartboard专业虚拟/增强现实中文社区',
+    link: 'http://112.74.75.39:3000',
     language: 'zh-cn',
-    description: 'CNode：Node.js专业中文社区',
+    description: 'cartboard专业虚拟/增强现实中文社区',
     //最多获取的RSS Item数量
     max_rss_items: 50
   },
@@ -66,8 +66,8 @@ var config = {
     host: 'smtp.126.com',
     port: 25,
     auth: {
-      user: 'club@126.com',
-      pass: 'club'
+      user: 'hdhscu@126.com',
+      pass: '674456'
     }
   },
 
