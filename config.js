@@ -6,19 +6,19 @@ var path = require('path');
 
 var config = {
   // debug 为 true 时，用于本地调试
-  debug: false,
+  debug: true,
 
   get mini_assets() { return !this.debug; }, // 是否启用静态文件的合并压缩，详见视图中的Loader
 
   name: 'cartboard club', // 社区名字
-  description: 'cartboard专业虚拟/增强现实中文社区', // 社区的描述
+  description: 'cartboard AR-VR中文社区', // 社区的描述
   keywords: 'AR, VR, cartboard, hololens, oculus rift',
 
   // 添加到 html head 中的信息
   site_headers: [
     '<meta name="author" content="EDP@TAOBAO" />'
   ],
-  site_logo: '/public/images/cnodejs_light.svg', // default is `name`
+  site_logo: '/public/images/cnodejs_light.png', // default is `name`
   site_icon: '/public/images/cnode_icon_32.png', // 默认没有 favicon, 这里填写网址
   // 右上角的导航区
   site_navs: [
@@ -53,7 +53,7 @@ var config = {
 
   // RSS配置
   rss: {
-    title: 'cartboard专业虚拟/增强现实中文社区',
+    title: 'cartboard AR-VR中文社区',
     link: 'http://112.74.75.39:3000',
     language: 'zh-cn',
     description: 'cartboard专业虚拟/增强现实中文社区',
@@ -80,9 +80,9 @@ var config = {
 
   // github 登陆的配置
   GITHUB_OAUTH: {
-    clientID: 'your GITHUB_CLIENT_ID',
-    clientSecret: 'your GITHUB_CLIENT_SECRET',
-    callbackURL: 'http://cnodejs.org/auth/github/callback'
+    clientID: '6e878201b99abb60a480',
+    clientSecret: 'f89104905ff47f8b4b9d03e1d43f8fde98053931',
+    callbackURL: 'http://112.74.75.39:3000/auth/github/callback'
   },
   // 是否允许直接注册（否则只能走 github 的方式）
   allow_sign_up: true,
