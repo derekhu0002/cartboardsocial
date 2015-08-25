@@ -112,6 +112,8 @@ var config = {
 
   // 版块
   tabs: [
+    ['Hololens', 'Hololens'],
+    ['OculusRift', 'Oculus Rift'],
     ['share', '分享'],
     ['ask', '问答'],
     ['job', '招聘'],
